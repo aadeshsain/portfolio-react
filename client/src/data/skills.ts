@@ -1,9 +1,22 @@
-import { 
-  FaHtml5, FaCss3Alt, FaJs, FaReact, 
-  FaGitAlt, FaGithub, FaFigma, FaBootstrap, 
-  FaNode
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGitAlt,
+  FaGithub,
+  FaFigma,
+  FaBootstrap,
+  FaNode,
 } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiVite, SiBun, SiCanva } from "react-icons/si";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiVite,
+  SiBun,
+  SiCanva,
+} from "react-icons/si";
 import { TbApi } from "react-icons/tb";
 import { IconType } from "react-icons";
 
@@ -11,6 +24,7 @@ export interface Skill {
   name: string;
   icon: IconType;
 }
+s;
 
 export const frontendSkills: Skill[] = [
   { name: "HTML", icon: FaHtml5 },

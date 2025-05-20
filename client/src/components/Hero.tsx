@@ -11,7 +11,6 @@ export default function Hero() {
     true,
   );
 
-  
   return (
     <section
       id="hero"
