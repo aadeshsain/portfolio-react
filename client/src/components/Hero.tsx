@@ -4,26 +4,32 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const { targetRef, isIntersecting } = useIntersectionObserver({
-    threshold: 0.1
-  }, true);
+  const { targetRef, isIntersecting } = useIntersectionObserver(
+    {
+      threshold: 0.1,
+    },
+    true,
+  );
 
+  
   return (
-    <section 
-      id="hero" 
-      className="container mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12"
+    <section
+      id="hero"
+      className="container mx-auto px-20 max-sm:px-6 py-18 md:py-32 flex flex-col md:flex-row items-center gap-12"
       ref={targetRef as React.RefObject<HTMLElement>}
     >
-      <motion.div 
+      <motion.div
         className="flex-1 space-y-6"
         initial={{ opacity: 0, y: 20 }}
-        animate={{ 
-          opacity: isIntersecting ? 1 : 0, 
-          y: isIntersecting ? 0 : 20 
+        animate={{
+          opacity: isIntersecting ? 1 : 0,
+          y: isIntersecting ? 0 : 20,
         }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <p className="text-primary dark:text-blue-400 font-medium">Hello, I'm</p>
+        <p className="text-primary dark:text-blue-400 font-medium">
+          Hello, I'm
+        </p>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 dark:text-white">
           Aajad Sain
         </h1>
@@ -35,17 +41,15 @@ export default function Hero() {
           Rajasthan, India
         </p>
         <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
-          Front-End Developer skilled in React, Tailwind CSS, and JavaScript. Passionate about building clean, responsive UIs and delivering great user experiences.
+          Front-End Developer skilled in React, Tailwind CSS, and JavaScript.
+          Passionate about building clean, responsive UIs and delivering great
+          user experiences.
         </p>
         <div className="flex flex-wrap gap-4 pt-4">
-          <Button 
-            size="lg"
-            className="px-6 py-3"
-            asChild
-          >
+          <Button size="lg" className="px-6 py-3" asChild>
             <a href="#contact">Contact Me</a>
           </Button>
-          <Button 
+          <Button
             size="lg"
             variant="outline"
             className="px-6 py-3 border-primary text-primary hover:bg-blue-50 dark:hover:bg-slate-800"
@@ -55,23 +59,23 @@ export default function Hero() {
           </Button>
         </div>
         <div className="pt-6 flex gap-5">
-          <a 
-            href="https://github.com/aadeshsain" 
-            target="_blank" 
+          <a
+            href="https://github.com/aadeshsain"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors"
           >
             <GitPullRequest className="h-6 w-6" />
           </a>
-          <a 
-            href="https://linkedin.com/in/aadesh-sain-002191317" 
-            target="_blank" 
+          <a
+            href="https://linkedin.com/in/aadesh-sain-002191317"
+            target="_blank"
             rel="noopener noreferrer"
             className="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors"
           >
             <Linkedin className="h-6 w-6" />
           </a>
-          <a 
+          <a
             href="mailto:sainaadesh1121@gmail.com"
             className="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors"
           >
@@ -79,12 +83,12 @@ export default function Hero() {
           </a>
         </div>
       </motion.div>
-      <motion.div 
+      <motion.div
         className="flex-1 flex justify-center md:justify-end"
         initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ 
-          opacity: isIntersecting ? 1 : 0, 
-          scale: isIntersecting ? 1 : 0.9 
+        animate={{
+          opacity: isIntersecting ? 1 : 0,
+          scale: isIntersecting ? 1 : 0.9,
         }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
