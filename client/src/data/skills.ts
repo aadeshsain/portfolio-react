@@ -23,8 +23,7 @@ import { IconType } from "react-icons";
 export interface Skill {
   name: string;
   icon: IconType;
-}
-s;
+} ;
 
 export const frontendSkills: Skill[] = [
   { name: "HTML", icon: FaHtml5 },

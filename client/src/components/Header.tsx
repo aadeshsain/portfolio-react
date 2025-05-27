@@ -11,7 +11,7 @@ const navLinks = [
   { href: "#contact", label: "Contact" },
 ];
 
-ssexport default function Header() {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {

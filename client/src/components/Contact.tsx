@@ -96,10 +96,10 @@ export default function Contact() {
                   <div>
                     <p className="font-medium text-slate-800 dark:text-white">Phone</p>
                     <a 
-                      href="tel:+918437380612" 
+                      href="tel:+916367708083" 
                       className="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-blue-400 transition-colors"
                     >
-                      +91 8437380612
+                      +91 6367708083
                     </a>
                   </div>
                 </div>
